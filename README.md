@@ -1,24 +1,14 @@
 # vue-calendar
 
-## Project setup
-```
-npm install
-```
+Vue.jsでカレンダー作ってみた
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+ふと思いついてから完成させるのにどれくらいの時間でできるかを試してみた
 
-### Compiles and minifies for production
-```
-npm run build
-```
+所要時間2~4時間程
 
-### Lints and fixes files
-```
-npm run lint
-```
+Vueは最小構成で追加のパッケージ等も無いシンプルなプロジェクトにした
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 今後
+余裕あったら曜日の色付けと
+
+祝日などの取得をしたい
