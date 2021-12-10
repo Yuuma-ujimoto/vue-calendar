@@ -11,9 +11,7 @@
   <div class="calender-wrapper">
     <div class="calender-main">
       <Cell :type="cell.type" :date="cell.date" v-for="(cell,index) in DateArray" :key="index"/>
-
     </div>
-
   </div>
 </template>
 
@@ -38,10 +36,7 @@ export default {
   computed: {
     DateArray: function () {
       const TargetDate = new Date(this.year, this.month - 1, 1)
-      console.log(TargetDate)
       const day = TargetDate.getDay()
-
-
       let Result = this.getDefaultDate()
       const BeforeMonthMaxDate = this.calcDate("Before")
       for (let i = 0; i < day; i++) {
@@ -163,20 +158,22 @@ export default {
   justify-content: center;
   align-items: center;
 }
-.info-wrapper{
+
+.info-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.calender-main  {
+.calender-main {
   width: 840px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
 }
-.info-main{
+
+.info-main {
   width: 840px;
   display: flex;
 }
